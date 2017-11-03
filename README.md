@@ -161,10 +161,15 @@ You can also [join our team](https://matterport.com/careers/) and help us build 
 
 To train or test on MS COCO, you'll also need:
 * pycocotools
+  * git clone https://github.com/waleedka/coco pycocotools
+  * cd pycocotools/PythonAPI
+  * python setup.py build_ext install
 * [MS COCO Dataset](http://cocodataset.org/#home)
 
 If you use Docker, the code has been verified to work on
 [this Docker container](https://hub.docker.com/r/waleedka/modern-deep-learning/).
+* docker run -it -p 8888:8888 -p 6006:6006 -v ~/:/host waleedka/modern-deep-learning
+* pycocotools install steps also needed inside container
 
 
 ## Installation
